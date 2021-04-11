@@ -8,6 +8,7 @@
 	"repository": "https://github.com/richardtallent/vue-simple-calendar",
 	"private": false,
 	"scripts": {
+		"install": "npm run build",
 		"serve": "vue-cli-service serve",
 		"build": "vue-cli-service build",
 		"bundle": "vue-cli-service build --target lib --name CalendarView ./src/components/bundle.js",
