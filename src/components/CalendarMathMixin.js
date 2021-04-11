@@ -275,11 +275,14 @@ export default {
 		// ******************************
 		normalizeEvent(event, isHovered) {
 			// Classes may be a string, an array, or null. Normalize to an array
-			const eventClasses = event.classes
-				? Array.isArray(event.classes)
-					? [...event.classes]
-					: [event.classes]
-				: []
+			let eventClasses;
+			if (event.confirmed) {
+				eventClasses = ['event-success']
+			} else if (event.confirmed === 0) {
+				eventClasses = ['event-danger']
+			} else {
+				eventClasses = event.classes ? Array.isArray(event.classes) ? _toConsumableArray(event.classes) : [event.classes] : []
+			}
 			// Provides support for pseudo-hover of entire event when one part of it is hovered
 			if (isHovered) eventClasses.push("isHovered")
 			return {
