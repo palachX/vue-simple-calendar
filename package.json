@@ -1,11 +1,11 @@
 {
-	"name": "vue-simple-calendar",
+	"name": "vue-simple-calendar-palach-edition",
 	"version": "4.2.2",
 	"description": "Simple calendar event control",
-	"author": "richardtallent <richard@tallent.us>",
+	"author": "P@l@ch <gurski.alex@gmail.com>",
 	"license": "MIT",
 	"main": "dist/CalendarView.umd.js",
-	"repository": "https://github.com/richardtallent/vue-simple-calendar",
+	"repository": "https://github.com/palachX/vue-simple-calendar",
 	"private": false,
 	"scripts": {
 		"serve": "vue-cli-service serve",
